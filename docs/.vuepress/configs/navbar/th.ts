@@ -2,23 +2,10 @@ import type { NavbarConfig } from "@vuepress/theme-default";
 
 export const th: NavbarConfig = [
   {
-    text: "หน้าแรก",
-    link: "/",
-    children: [
-      {
-        text: "เกี่ยวกับ Pre-programming",
-        link: "/about/",
-      },
-      {
-        text: "คำถามถามบ่อย (FAQ)",
-        link: "/about/faq/",
-      },
-    ],
-  },
-  {
     text: "เนื้อหา",
     link: "/python/course/",
     children: [
+      // "/python/course/",
       "/python/course/algorithm/",
       "/python/course/introduction/",
       "/python/course/variable/",
@@ -35,7 +22,17 @@ export const th: NavbarConfig = [
   {
     text: "แบบฝึกหัด",
     link: "/python/exercise/",
-    children: [],
+    // children: [
+    //   "/python/exercise/algorithm/",
+    //   "/python/exercise/variable/",
+    //   "/python/exercise/data-type/",
+    //   "/python/exercise/functions/",
+    //   "/python/exercise/string/",
+    //   "/python/exercise/decision/",
+    //   "/python/exercise/loop/",
+    //   "/python/exercise/array/",
+    //   "/python/exercise/dictionary/",
+    // ],
   },
   {
     text: "เคล็ดลับ",
@@ -56,6 +53,24 @@ export const th: NavbarConfig = [
       {
         text: "Facebook คณะ",
         link: "https://www.facebook.com/ITLadkrabang",
+      },
+    ],
+  },
+  {
+    text: "เกี่ยวกับ",
+    link: "/",
+    children: [
+      {
+        text: "หน้าแรก",
+        link: "/",
+      },
+      {
+        text: "เกี่ยวกับ Pre-programming",
+        link: "/about/",
+      },
+      {
+        text: "คำถามถามบ่อย (FAQ)",
+        link: "/about/faq/",
       },
     ],
   },
