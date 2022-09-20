@@ -66,7 +66,7 @@ def electricity_bill():
     divider = 10**6
 
     # print result
-    print(f"Total: {cost / divider}")
+    print(f"Total: {round(cost / divider, 2)}")
 
 
 electricity_bill()
