@@ -1,7 +1,7 @@
 import { defineUserConfig } from "@vuepress/cli";
 import { defaultTheme } from "@vuepress/theme-default";
 import { googleAnalyticsPlugin } from "@vuepress/plugin-google-analytics";
-// import { docsearchPlugin } from "@vuepress/plugin-docsearch";
+import { docsearchPlugin } from "@vuepress/plugin-docsearch";
 import { navbar, sidebar } from "./configs";
 
 export default defineUserConfig({
@@ -60,11 +60,11 @@ export default defineUserConfig({
   }),
 
   plugins: [
-    // docsearchPlugin({
-    //   appId: "VIR8TV46UV",
-    //   apiKey: "b4ef90b459d81c338bf1f61b2ad2ad06",
-    //   indexName: "sagelga",
-    // }),
+    docsearchPlugin({
+      appId: "2GMWZETHAW",
+      apiKey: "e9aaa6205b2e27fdc366948b81235a73",
+      indexName: "prepro-sagelga",
+    }),
     googleAnalyticsPlugin({
       id: "G-5RQS97DPM9",
     }),
