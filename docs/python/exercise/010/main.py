@@ -39,10 +39,9 @@ def main(number):
 
     result.reverse()
 
-    for i in range(len(result)):
-        digit = result[i]
-        print(digit, end="")
+    for i in result:
+        print(i, end="")
     print()
 
 
-main(300)
+main(int(input("Input: ")))

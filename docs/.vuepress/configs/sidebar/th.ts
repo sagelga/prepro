@@ -4,7 +4,7 @@ export const th: SidebarConfig = {
   "/python/course/": [
     {
       text: "Python เบื้องต้น",
-      link: "python/course/",
+      link: "/python/course/",
       children: [
         "/python/course/algorithm/",
         "/python/course/introduction/",
@@ -20,11 +20,26 @@ export const th: SidebarConfig = {
       ],
     },
   ],
-  "/python/excercise/": [
+  "/python/exercise/": [
     {
-      text: "การทำงาน",
-      link: "/excercise/",
-      children: [],
+      text: "แบบฝึกหัด",
+      link: "/python/exercise/",
+      children: [
+        "/python/exercise/001/",
+        "/python/exercise/002/",
+        "/python/exercise/003/",
+        "/python/exercise/004/",
+        "/python/exercise/005/",
+        "/python/exercise/006/",
+        "/python/exercise/007/",
+        "/python/exercise/008/",
+        "/python/exercise/009/",
+        "/python/exercise/010/",
+        "/python/exercise/011/",
+        "/python/exercise/012/",
+        "/python/exercise/013/",
+        "/python/exercise/014/",
+      ],
     },
   ],
 };

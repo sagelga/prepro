@@ -22,17 +22,7 @@ export const th: NavbarConfig = [
   {
     text: "แบบฝึกหัด",
     link: "/python/exercise/",
-    // children: [
-    //   "/python/exercise/algorithm/",
-    //   "/python/exercise/variable/",
-    //   "/python/exercise/data-type/",
-    //   "/python/exercise/functions/",
-    //   "/python/exercise/string/",
-    //   "/python/exercise/decision/",
-    //   "/python/exercise/loop/",
-    //   "/python/exercise/array/",
-    //   "/python/exercise/dictionary/",
-    // ],
+    children: ["/python/exercise/"],
   },
   {
     text: "เคล็ดลับ",
