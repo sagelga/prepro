@@ -1,5 +1,6 @@
-roman_ones = ["I", "X", "C", "M", "?"]
-roman_fives = ["V", "L", "D", "?", "?"]
+roman_ones = ["I", "X", "C", "M",
+              "_X", "_C", "_M", "__X", "__C", "__M"]
+roman_fives = ["V", "L", "D", "_V", "_L", "_D", "__V", "__L", "__D"]
 
 
 def main(number):
