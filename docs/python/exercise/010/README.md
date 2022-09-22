@@ -1,19 +1,83 @@
 # Number to Roman converter
-Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
+ให้ทำการสร้างอัลกอริทึมในการแปลงตัวเลขมาเป็นเลขโรมัน โดยจะมีตัวอักษรโรมันทั้งหมด 7 ตัวอักษร
 
-Symbol       Value
-I             1
-V             5
-X             10
-L             50
-C             100
-D             500
-M             1000
-For example, 2 is written as II in Roman numeral, just two one's added together. 12 is written as XII, which is simply X + II. The number 27 is written as XXVII, which is XX + V + II.
 
-Roman numerals are usually written largest to smallest from left to right. However, the numeral for four is not IIII. Instead, the number four is written as IV. Because the one is before the five we subtract it making four. The same principle applies to the number nine, which is written as IX. There are six instances where subtraction is used:
+โดยแต่ละค่านั้นมีค่าดังต่อไปนี้
 
-I can be placed before V (5) and X (10) to make 4 and 9.
-X can be placed before L (50) and C (100) to make 40 and 90.
-C can be placed before D (500) and M (1000) to make 400 and 900.
-Given an integer, convert it to a roman numeral.
+| ตัวเลข | เครื่องหมาย      |
+|-------|----------------|
+| 1     | I              |
+| 5     | V              |
+| 10    | X              |
+| 50    | L              |
+| 100   | C              |
+| 500   | D              |
+| 1000  | M              |
+
+**เขียนซ้ำตัวอักษร**นั้นเมื่อเราต้องการเลขนั้นมากกว่า 1 ก็สามารถอย่างเช่น
+
+- II = 1 + 1 = 2
+- XXX = 10 + 10 + 10 = 30
+- XXIII = 10 + 10 + 1 + 1 + 1 = 23
+
+แต่จะมีเงื่อนไขในการเขียนตัวเลขซ้ำดังนี้
+- ไม่สามารถเขียนสัญลักษณ์เลขโรมันเดียวกันติดกันได้มากกว่า 3 ตัว
+- โดยทั่วไปแล้ว จะเขียนสัญลักษณ์เลขโรมันโดยเริ่มจากค่าสูงสุดไปต่ำสุด
+- ไม่ให้ซ้ำเลขจำนวน 5, 50, 500 สองครั้งเพื่อทำให้เป็น 10, 100, 1000
+
+**ถ้าเลขโรมันตัวหน้ามีค่ามากกว่าตัวหลัง** ให้นำ "ค่าตัวหลัง + ตัวหน้า"
+
+- VI → 5 + 1 = 6
+- XI → 10 + 1 = 11
+- XXI → 10 + 10 + 1 = 21
+- MMXXII→ 1000 + 1000 + 10 + 10 + 1 + 1 = 2022
+
+**ถ้าเลขโรมันตัวหน้ามีค่าน้อยกว่าตัวหลัง** ให้นำ "ค่าตัวหลัง - ตัวหน้า"
+
+- IV → 5 - 1 = 4
+- IX → 10 - 1 = 9
+- XL → 50 - 10 = 40
+
+**หากตัวเลขมากกว่า 3999** ให้ทำการซ้ำตัวอักษร และใช้ overline ในการ x1000 ตัวอักษรนั้น
+- <span class="overline">V</span> → 5 x 1000 = 5000
+- <span class="overline">M</span> → 1000 x 1000 = 1,000,000
+- <span class="overline">CM</span> → (1000 x 1000) - (500 x 1000) = 900,000
+
+และใช้ซ้ำเป็นสองชั้นเพื่อ x1000 อีกหนึ่งครั้ง
+
+## Input / Output
+- Input: ตัวเลขจำนวนเต็มบวกระหว่าง 1 ถึง 3999
+- Output: ตัวเลขโรมัน
+
+## Sample Input / Output
+```text
+Input
+12
+
+Output
+XII
+```
+
+```text
+Input
+69
+
+Output
+LXIX
+```
+
+```text
+Input
+2022
+
+Output
+MMXXII
+```
+
+```text
+Input
+3999
+
+Output
+MMMCMXCIX
+```

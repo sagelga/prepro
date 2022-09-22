@@ -2,8 +2,8 @@
 
 :root {
   --font-family: "Anuphan", "IBM Plex Sans Thai", "IBM Plex Sans", sans-serif;
-  --font-family-code: "JetBrains Mono", "Anuphan", "IBM Plex Sans Thai", monospace;
-  --font-family-monospace: "JetBrains Mono", "Anuphan", "IBM Plex Sans Thai", monospace;
+  --font-family-code: "JetBrains Mono",  monospace, "Anuphan", "IBM Plex Sans Thai";
+  --font-family-monospace: "JetBrains Mono",  monospace, "Anuphan", "IBM Plex Sans Thai";
 
   scroll-behavior: smooth;
 
@@ -15,4 +15,8 @@
 html.dark {
   --c-brand: rgb(255, 165, 0);
   --c-brand-light: rgb(255, 229, 180);
+}
+
+.overline{
+  text-decoration: overline;
 }
