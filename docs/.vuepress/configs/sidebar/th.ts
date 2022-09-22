@@ -39,6 +39,8 @@ export const th: SidebarConfig = {
         "/python/exercise/012/",
         "/python/exercise/013/",
         "/python/exercise/014/",
+        "/python/exercise/015/",
+        "/python/exercise/016/",
       ],
     },
   ],
