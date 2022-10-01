@@ -22,7 +22,7 @@ export const th: NavbarConfig = [
   {
     text: "แบบฝึกหัด",
     link: "/python/exercise/",
-    children: ["/python/exercise/"],
+    // children: ["/python/exercise/"],
   },
   {
     text: "เคล็ดลับ",

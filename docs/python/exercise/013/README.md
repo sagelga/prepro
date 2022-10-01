@@ -1,8 +1,12 @@
 # Permutation
 Given an array nums of distinct integers, return all the possible permutations. You can return the answer in any order.
 
+## ข้อกำหนดและเงื่อนไข
+1 <= nums.length <= 6
+-10 <= nums[i] <= 10
+All the integers of nums are unique
 
-## Input / Output
+## ตัวอย่าง Input / Output
 Example 1:
 
 Input: nums = [1,2,3]
@@ -17,7 +21,3 @@ Input: nums = [1]
 Output: [[1]]
 
 
-## ข้อกำหนดและเงื่อนไข
-1 <= nums.length <= 6
--10 <= nums[i] <= 10
-All the integers of nums are unique
