@@ -3,14 +3,16 @@
 
 ซึ่งเราสามารถใช้สูตรในการแปลงค่าได้ดังนี้
 
-![](./img/celsiusfahrenheit.png)
+![](./img/to_celsius.png)
+
+![](./img/to_fahrenheit.png)
 
 โดยที่
 - T_C คือค่าอุณหภูมิแบบ Celsius
 - T_F คือค่าอุณหภูมิแบบ Fahrenheit
 
 ## ข้อกำหนดและเงื่อนไข
-- Input (integer) ค่าอุณหภูมิ โดยมีค่าตั้งแต่ -100 ถึง 100
+- Input (integer) ค่าอุณหภูมิ โดยมีค่าตั้งแต่ -200 ถึง 200
 - Input (string) ประเภทหน่วยอุณหภูมิของค่าที่รับเข้า (Input) โดยจะใช้
   - C สำหรับ Celsius และ
   - F สำหรับ Fahrenheit
@@ -23,7 +25,7 @@ Input
 C
 
 Output
-212 Fahrenheit
+212.0 Fahrenheit
 ```
 
 ```text
@@ -32,5 +34,5 @@ Input
 F
 
 Output
--40 Celsius
+-40.0 Celsius
 ```
