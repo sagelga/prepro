@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-3ee18e1b","path":"/python/exercise/034/","title":"String Palindrome","lang":"th-TH","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1664802961000,"contributors":[{"name":"Kunanon Srisuntiroj","email":"son9912@gmail.com","commits":1}]},"filePathRelative":"python/exercise/034/README.md"}');export{e as data};

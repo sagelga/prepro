@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-3ee18dfc","path":"/python/exercise/033/","title":"Service Optimizer","lang":"th-TH","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1664802961000,"contributors":[{"name":"Kunanon Srisuntiroj","email":"son9912@gmail.com","commits":1}]},"filePathRelative":"python/exercise/033/README.md"}');export{e as data};
