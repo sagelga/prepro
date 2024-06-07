@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/vue,vuejs,macos,windows,visualstudiocode,python,pythonvanilla
-# Edit at https://www.toptal.com/developers/gitignore?templates=vue,vuejs,macos,windows,visualstudiocode,python,pythonvanilla
+# Created by https://www.toptal.com/developers/gitignore/api/vue,macos,vuejs,python,windows,pythonvanilla,visualstudiocode,yarn
+# Edit at https://www.toptal.com/developers/gitignore?templates=vue,macos,vuejs,python,windows,pythonvanilla,visualstudiocode,yarn
 
 ### macOS ###
 # General
@@ -196,6 +196,16 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
+### Python Patch ###
+# Poetry local configuration file - https://python-poetry.org/docs/configuration/#local-configuration
+poetry.toml
+
+# ruff
+.ruff_cache/
+
+# LSP config files
+pyrightconfig.json
+
 ### PythonVanilla ###
 # Byte-compiled / optimized / DLL files
 
@@ -242,12 +252,6 @@ cython_debug/
 .history
 .ionide
 
-# Support for Project snippet scope
-.vscode/*.code-snippets
-
-# Ignore code-workspaces
-*.code-workspace
-
 ### Vue ###
 # gitignore template for Vue.js projects
 #
@@ -293,6 +297,22 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/vue,vuejs,macos,windows,visualstudiocode,python,pythonvanilla
-.temp
-.cache
+### yarn ###
+# https://yarnpkg.com/getting-started/qa#which-files-should-be-gitignored
+
+.yarn/*
+!.yarn/releases
+!.yarn/patches
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+
+# if you are NOT using Zero-installs, then:
+# comment the following lines
+!.yarn/cache
+
+# and uncomment the following lines
+# .pnp.*
+
+# End of https://www.toptal.com/developers/gitignore/api/vue,macos,vuejs,python,windows,pythonvanilla,visualstudiocode,yarn
+docs/.vuepress/.temp/*
