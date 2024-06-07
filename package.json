@@ -6,12 +6,17 @@
     "author": "Kunanon Srisuntiroj <son9912@gmail.com>",
     "license": "MIT",
     "devDependencies": {
+        "@algolia/autocomplete-shared": "^1.17.2",
         "@algolia/client-search": "^4.23.3",
         "@vuepress/bundler-vite": "^2.0.0-rc.13",
         "@vuepress/plugin-docsearch": "^2.0.0-rc.34",
         "@vuepress/plugin-google-analytics": "^2.0.0-rc.34",
         "@vuepress/plugin-search": "^2.0.0-rc.34",
         "@vuepress/theme-default": "^2.0.0-rc.35",
+        "algoliasearch": "^4.23.3",
+        "search-insights": "^2.14.0",
+        "vue": "^3.4.27",
+        "vue-demi": "^0.14.8",
         "vuepress": "^2.0.0-rc.13"
     },
     "scripts": {
